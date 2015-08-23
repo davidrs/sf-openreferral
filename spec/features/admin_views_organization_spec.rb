@@ -51,7 +51,7 @@ feature "Admin views organization" do
   def strip_formatting(html)
     html.
       gsub(/ data-.+?=".+"/, "").
-      gsub(' style="display: block;"', "").
+      gsub(/ style="display: block; *"/, "").
       split(/(?<=>)\n?/).
       map(&:strip)
   end
