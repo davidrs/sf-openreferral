@@ -34,8 +34,8 @@ $actions-height: 3 * $base-spacing;
 
   &-modal {
     @include padding($base-spacing);
-    background-color: #fff;
-    box-shadow: 0 0 6px rgba(#000, 0.3);
+    background-color: $white;
+    box-shadow: 0 0 6px rgba($black, 0.3);
     left: 0;
     margin: $base-spacing*2 $base-spacing*4;
     position: absolute;
