@@ -3,7 +3,7 @@ require "rails_helper"
 feature "Admin views organization" do
   scenario "admin does not see organization details initially", :js do
     admin = create(:admin)
-    organization = create(:organization)
+    create(:organization)
     login_as(admin, scope: :admin)
 
     visit organizations_path

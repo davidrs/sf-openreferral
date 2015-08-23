@@ -7,7 +7,7 @@ function initTextArea () {
   var $text = $('#organization_description');
   function resize () {
     $text.height( 'auto' );
-    var textareas = $('textarea')
+    var textareas = $('textarea');
     if(textareas.length) {
       $text.height(textareas[0].scrollHeight);
     }
